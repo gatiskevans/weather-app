@@ -1,0 +1,42 @@
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 0.4rem;
+    margin: auto;
+}
+
+form {
+    text-align: center;
+    border-radius: 6px;
+    padding: 0.4rem;
+    margin: auto;
+}
+
+input {
+    margin-top: 10px;
+    border-radius: 6px;
+}
+
+#container {
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 6px;
+    inline-size: max-content;
+    padding: 0.4rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+#titleAndSearch {
+    border: 1px solid black;
+    border-radius: 6px;
+    margin: 1rem 2rem;
+}
+
+td#results {
+    font-size: 1.1rem;
+    padding: 0.3rem 1rem;
+}
