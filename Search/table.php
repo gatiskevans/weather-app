@@ -34,13 +34,13 @@
     <table>
 
             <tbody>
-                <td>Date</td>
-                <td>Max Temperature</td>
-                <td>Min Temperature</td>
-                <td>Average Temperature</td>
-                <td>Max Wind KPH</td>
-                <td>Conditions</td>
-                <td>Icon</td>
+                <td><b>Date</td>
+                <td><b>Max Temperature</b></td>
+                <td><b>Min Temperature</b></td>
+                <td><b>Average Temperature</b></td>
+                <td><b>Max Wind KPH</b></td>
+                <td><b>Conditions</b></td>
+                <td><b>Icon</b></td>
             </tbody>
 
             <?php
@@ -64,13 +64,13 @@
     <table>
 
         <tbody>
-            <td>Time</td>
-            <td>Temperature</td>
-            <td>Conditions</td>
-            <td>Icon</td>
-            <td>Wind Speed</td>
-            <td>Wind Degree</td>
-            <td>Wind Direction</td>
+            <td><b>Time</b></td>
+            <td><b>Temperature</b></td>
+            <td><b>Conditions</b></td>
+            <td><b>Icon</b></td>
+            <td><b>Wind Speed</b></td>
+            <td><b>Wind Degree</b></td>
+            <td><b>Wind Direction</b></td>
         </tbody>
 
         <?php
