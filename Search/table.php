@@ -35,9 +35,9 @@
 
             <tbody>
                 <td><b>Date</td>
+                <td><b>Average Temperature</b></td>
                 <td><b>Max Temperature</b></td>
                 <td><b>Min Temperature</b></td>
-                <td><b>Average Temperature</b></td>
                 <td><b>Max Wind KPH</b></td>
                 <td><b>Conditions</b></td>
                 <td><b>Icon</b></td>
@@ -47,9 +47,9 @@
             foreach($data->getForecastDays() as $day){
                 echo "<tbody>";
                 echo "<td>$day->date</td>";
+                echo "<td>{$day->day->avgtemp_c}°C</td>";
                 echo "<td>{$day->day->maxtemp_c}°C</td>";
                 echo "<td>{$day->day->mintemp_c}°C</td>";
-                echo "<td>{$day->day->avgtemp_c}°C</td>";
                 echo "<td>{$day->day->maxwind_kph} kph</td>";
                 echo "<td>{$day->day->condition->text}</td>";
                 echo "<td><img src='{$day->day->condition->icon}' width='25px' height='25px'></td>";
