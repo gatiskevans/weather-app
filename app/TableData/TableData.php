@@ -41,7 +41,7 @@
             return $this->data->current->temp_c;
         }
 
-        public function getForecastDays()
+        public function getForecastDays(): array
         {
             return $this->data->forecast->forecastday;
         }

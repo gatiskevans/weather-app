@@ -14,7 +14,7 @@
             $this->weatherData = json_decode(file_get_contents($apiUrl, true));
         }
 
-        public function getWeatherData()
+        public function getWeatherData(): \stdClass
         {
             return $this->weatherData;
         }
