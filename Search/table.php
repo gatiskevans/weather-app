@@ -21,6 +21,8 @@
         <tr>
             <td id="results"><b>Region: <?= $data->getRegion() ?></b></td>
             <td id="results"><b>Country: <?= $data->getCountry() ?></b></td>
+            <td id="results"><b>Latitude: <?= $data->getLatitude() ?>°</b></td>
+            <td id="results"><b>Longitude: <?= $data->getLongitude() ?>°</b></td>
             <td id="results"><b>Current Time: <?= $data->getLocalTime() ?></b></td>
             <td id="results"><b>Current Temperature: <?= $data->getTemperature() ?>°C</b></td>
         </tr>
@@ -38,6 +40,7 @@
                 <td>Average Temperature</td>
                 <td>Max Wind KPH</td>
                 <td>Conditions</td>
+                <td>Icon</td>
             </tbody>
 
             <?php
@@ -48,7 +51,8 @@
                 echo "<td>{$day->day->mintemp_c}°C</td>";
                 echo "<td>{$day->day->avgtemp_c}°C</td>";
                 echo "<td>{$day->day->maxwind_kph} kph</td>";
-                echo "<td>{$day->day->condition->text} </td>";
+                echo "<td>{$day->day->condition->text}</td>";
+                echo "<td><img src='{$day->day->condition->icon}' width='25px' height='25px'></td>";
                 echo "</tbody>";
             }
             ?>
@@ -63,6 +67,7 @@
             <td>Time</td>
             <td>Temperature</td>
             <td>Conditions</td>
+            <td>Icon</td>
             <td>Wind Speed</td>
             <td>Wind Degree</td>
             <td>Wind Direction</td>
@@ -78,6 +83,7 @@
                     echo "<td>$time->time</td>";
                     echo "<td>{$time->temp_c}°C</td>";
                     echo "<td>{$time->condition->text}</td>";
+                    echo "<td><img src='{$time->condition->icon}' width='25px' height='25px'></td>";
                     echo "<td>{$time->wind_kph} kph</td>";
                     echo "<td>{$time->wind_degree}°</td>";
                     echo "<td>{$time->wind_dir}</td>";

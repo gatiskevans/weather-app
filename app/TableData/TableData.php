@@ -26,6 +26,16 @@
             return $this->data->location->localtime;
         }
 
+        public function getLatitude(): string
+        {
+            return $this->data->location->lat;
+        }
+
+        public function getLongitude(): string
+        {
+            return $this->data->location->lon;
+        }
+
         public function getTemperature(): string
         {
             return $this->data->current->temp_c;
@@ -35,5 +45,4 @@
         {
             return $this->data->forecast->forecastday;
         }
-
     }
