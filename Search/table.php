@@ -75,7 +75,7 @@
 
         <?php
 
-            foreach($data->getForecastDays() as $index => $days)
+            foreach($data->getForecastDays() as $days)
             {
                 foreach($days->hour as $time)
                 {
